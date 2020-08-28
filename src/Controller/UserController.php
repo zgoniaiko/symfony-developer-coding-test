@@ -36,6 +36,7 @@ class UserController extends AbstractController
                 $user->getEmail(),
                 $user->getName(),
                 $user->getAge(),
+                'edit_route',
             ];
             $items[] = $item;
         }
