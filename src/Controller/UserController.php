@@ -36,7 +36,8 @@ class UserController extends AbstractController
                 $user->getEmail(),
                 $user->getName(),
                 $user->getAge(),
-                'edit_route',
+                '<button type="button" class="btn btn-primary" href="" data-toggle="modal" data-target="#createmodel" data-whatever="' . $user->getId() . '">Edit</button>
+',
             ];
             $items[] = $item;
         }
