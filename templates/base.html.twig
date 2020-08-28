@@ -118,5 +118,16 @@
 <script src="{{ asset('assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('assets/dist/js/adminlte.min.js') }}"></script>
+
+<script>
+$(document).ready(function() {
+    $('#users').DataTable( {
+        "processing": true,
+        "serverSide": true,
+        "ajax": "/user/"
+    } );
+} );
+</script>
+
 </body>
 </html>
